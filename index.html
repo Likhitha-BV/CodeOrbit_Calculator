@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <div class="calculator-header">
+        <h1>Calculator</h1>
+        <button type="button" id="clearHistory" class="history-btn">
+            Clear History
+        </button>
+    </div>
+
+    <div class="display-container">
+
+        <div id="expression" class="expression"></div>
+
+        <input
+            type="text"
+            id="display"
+            class="display"
+            value="0"
+            readonly
+            aria-label="Calculator display"
+        >
+
+        <div id="errorMessage" class="error-message"></div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button type="button" class="btn function" data-action="clear">
+            AC
+        </button>
+
+        <button type="button" class="btn function" data-action="delete">
+            DEL
+        </button>
+
+        <button type="button" class="btn function" data-action="percent">
+            %
+        </button>
+
+        <button type="button" class="btn operator" data-value="/">
+            ÷
+        </button>
+
+        <button type="button" class="btn number" data-value="7">
+            7
+        </button>
+
+        <button type="button" class="btn number" data-value="8">
+            8
+        </button>
+
+        <button type="button" class="btn number" data-value="9">
+            9
+        </button>
+
+        <button type="button" class="btn operator" data-value="*">
+            ×
+        </button>
+
+        <button type="button" class="btn number" data-value="4">
+            4
+        </button>
+
+        <button type="button" class="btn number" data-value="5">
+            5
+        </button>
+
+        <button type="button" class="btn number" data-value="6">
+            6
+        </button>
+
+        <button type="button" class="btn operator" data-value="-">
+            −
+        </button>
+
+        <button type="button" class="btn number" data-value="1">
+            1
+        </button>
+
+        <button type="button" class="btn number" data-value="2">
+            2
+        </button>
+
+        <button type="button" class="btn number" data-value="3">
+            3
+        </button>
+
+        <button type="button" class="btn operator" data-value="+">
+            +
+        </button>
+
+        <button type="button" class="btn number zero" data-value="0">
+            0
+        </button>
+
+        <button type="button" class="btn number" data-value=".">
+            .
+        </button>
+
+        <button type="button" class="btn equals" data-action="calculate">
+            =
+        </button>
+
+    </div>
+
+    <div class="history-section">
+
+        <h2>History</h2>
+
+        <div id="history" class="history">
+            <p class="empty-history">No calculations yet</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
